@@ -55,10 +55,33 @@ const pizzas = [
 // Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene una propiedad "ingredientes"
 // cuyo valor es un array con ingredientes.
 
- function idImpar(pizzas){
-   let a = pizzas.map((objetos) => {
-     objetos["id"] %2 !== 0;});
-       return (a);
-    } 
+//const a = [];
 
-idImpar();
+// const ids = pizzas.forEach((i) => {
+//  const b = i.id;
+//    if(b % 2 === 1){
+//      a.push(b);
+//      console.log( "Los id impar son " + a)
+//  }});
+
+//  const a = [];
+
+//  const MenosDe600 = pizzas.forEach((i) => {
+//    const b = i.precio;
+//    if (b < 600 ) {
+//      a.push(b)
+//      console.log("Las pizzas que valen menos de 600 son " +  a.length)
+//  }})
+
+ //const a = [];
+
+ //const NombreyPrecio = pizzas.forEach((i) => {
+ //console.log(`El ${i} tiene el siguiente coste ${i.nombre}: ${i.precio}`);
+ //})
+
+ const a = [];
+
+ const ingredientes = pizzas.forEach ((i) => {
+  const b = "La " + i.nombre + " contiene " + i.ingredientes;
+  console.log(b)
+ })
